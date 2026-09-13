@@ -1,0 +1,42 @@
+class Solution {
+public:
+    vector<int> rotation(vector<int> v){
+        for(int i=0;i<v.size()-1;i++){
+            int temp = v[i];
+            v[i] = v[i+1];
+            v[i+1] = temp;
+        }
+        return v;
+    }
+    vector<vector<int>> cyclicShift(int n, vector<vector<int>>& grid, vector<int>& rowShift, vector<int>& colShift) {
+        // vector<int>b = rotation(grid[0]);
+        // grid[0] = b;
+        // b = rotation(grid[0]);
+        // grid[0] = b;
+        // for(int i=0;i<grid.size();i++){
+        //     for(int j=0;j<n;j++){
+        //         cout<<grid[i][j];
+        //     }
+        //     cout<<endl;
+        // }
+        for(int i=0;i<rowShift.size();i++){
+            for(int j=0;j<rowShift[i];j++){
+                vector<int>b = rotation(grid[i]);
+                grid[i] = b;
+            }
+        }
+        for(int i=0;i<colShift.size();i++){
+            for(int j=0;j<colShift[i];j++){
+                vector<int>b;
+                for(int k=0;k<grid.size();k++){
+                    b.push_back(grid[k][i]);
+                }
+                vector<int>c= rotation(b);
+                for(int k=0;k<n;k++){
+                    grid[k][i] = c[k];
+                }
+            }
+        }
+        return grid;
+    }
+};

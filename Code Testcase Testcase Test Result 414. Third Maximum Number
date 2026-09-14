@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int thirdMax(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        int size = nums.size();
+        if(size<3) return nums[size-1];
+        int max = nums[size-1];
+        int scmax=nums[0];
+        for(int i=0;i<size;i++){
+            if(scmax<nums[i] && nums[i]!=max) scmax = nums[i];
+        }
+        int thmax = nums[0];
+        for(int i=0;i<size;i++){
+            if(thmax<nums[i] && nums[i]!=max && nums[i]!=scmax) thmax = nums[i];
+        }
+        if(thmax == scmax || thmax==max) return max;
+        else return thmax;
+    }
+};

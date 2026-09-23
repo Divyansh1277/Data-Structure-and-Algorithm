@@ -6,14 +6,28 @@ public:
             int a = nums.front();
             int b = nums.back();
             if(a>=b){
-                x = x-a;
-                count++;
-                nums.erase(nums.begin());
-            }
-            else{
-                x = x-b;
+                if(x>a){
+                    x = x-a;
+                    count++;
+                    nums.erase(nums.begin());
+                }
+                else{
+                    x = x-b;
                 count++;
                 nums.pop_back();
+                }
+            }
+            else{
+                if(x>b){
+                    x = x-b;
+                    count++;
+                    nums.pop_back();
+                }
+                else{
+                    x = x-a;
+                    count++;
+                    nums.erase(nums.begin());
+                }
             }
         }
         if(x==0) return count;

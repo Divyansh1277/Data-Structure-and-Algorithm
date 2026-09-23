@@ -27,7 +27,7 @@ public:
             temp = head->next;
             temp1 = head->next;
             while(temp!=nullptr){
-                if(temp->val>=temp1->val){
+                if(temp->val>=temp1->next->val){
                     temp1 = temp1->next;
                 }
                 else{
@@ -41,6 +41,6 @@ public:
                 }
             }
         }
-
+        return head;
     }
 };

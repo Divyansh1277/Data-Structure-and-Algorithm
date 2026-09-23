@@ -35,7 +35,7 @@ public:
                     prev->next = temp1;
                     temp = temp1;
                 }
-                if(temp1==nullptr && temp1!=nullptr){
+                if(temp1==nullptr && temp!=nullptr){
                     prev = prev->next;
                     temp = temp->next;
                     temp1 = temp;

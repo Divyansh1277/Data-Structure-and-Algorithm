@@ -1,0 +1,22 @@
+class Solution {
+public:
+    int minOperations(vector<int>& nums, int x) {
+        int count = 0;
+        while(x>0){
+            int a = nums.front();
+            int b = nums.back();
+            if(a>=b){
+                x = x-a;
+                count++;
+                nums.erase(nums.begin());
+            }
+            else{
+                x = x-b;
+                count++;
+                nums.pop_back();
+            }
+        }
+        if(x==0) return count;
+        else return -1;
+    }
+};

@@ -12,7 +12,7 @@ class Solution {
 public:
     ListNode* removeNodes(ListNode* head) {
         ListNode* temp = head;
-        ListNode* temp1 = head;
+        ListNode* temp1;
         ListNode* prev = head;
         while(prev->next!=nullptr){
             while(temp1!=NULL){
@@ -21,6 +21,7 @@ public:
                 }
                 else{
                     head = temp1;
+                    temp1 = temp1->next;
                 }
             }
             prev = head;

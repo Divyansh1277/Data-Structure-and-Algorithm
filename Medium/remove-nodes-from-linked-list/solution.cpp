@@ -27,18 +27,19 @@ public:
             temp = head->next;
             temp1 = head->next;
             while(temp!=nullptr){
-                if(temp->val>=temp1->next->val){
+                if(temp1==nullptr && temp1!=nullptr){
+                    prev = prev->next;
+                    temp = temp->next;
+                    temp1 = temp;
+                }
+                if(temp1!=nullptr && temp->val>=temp1->val){
                     temp1 = temp1->next;
                 }
                 else{
                     prev->next = temp1;
                     temp = temp1;
                 }
-                if(temp1==nullptr && temp1!=nullptr){
-                    prev = prev->next;
-                    temp = temp->next;
-                    temp1 = temp;
-                }
+                
             }
         }
         return head;

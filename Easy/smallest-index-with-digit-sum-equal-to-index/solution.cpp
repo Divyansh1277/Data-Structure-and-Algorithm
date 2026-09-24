@@ -7,7 +7,7 @@ public:
             while(nums[i]>0){
                 int a = nums[i]%10;
                 sum += a;
-                nums /= 10;
+                nums[i] /= 10;
             }
             if(sum==i){
                 return sum;

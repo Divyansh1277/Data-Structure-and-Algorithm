@@ -3,10 +3,13 @@
 | | |
 |---|---|
 | **Difficulty** | Easy |
-| **Language** | `Submit` |
+| **Language** | `C++` |
 | **Tags** | `String` |
 | **LeetCode** | [View Problem](https://leetcode.com/problems/length-of-last-word/) |
 
+| Runtime | Memory |
+|---------|--------|
+| 11 ms | 17.7 MB |
 
 ---
 

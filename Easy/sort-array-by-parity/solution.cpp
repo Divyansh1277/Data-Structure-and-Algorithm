@@ -1,6 +1,7 @@
 bool comp(int a,int b){
-    if(a%2==0) return true;
-    else return false;
+    if(a%2==0 && b%2!=0) return true;
+    if(a!=0 && b%2==0) return false;
+    return a>b;
 }
 class Solution {
 public:

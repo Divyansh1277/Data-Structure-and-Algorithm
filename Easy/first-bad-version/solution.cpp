@@ -7,8 +7,8 @@ public:
         int l = 1;
         int h = n;
         
-        while(l!=h){
-            int mid = (l+h)/2;
+        while(l<=h){
+            long long mid = (l+h)/2;
             if(isBadVersion(mid)){
                 h = mid-1;
             }
@@ -16,6 +16,6 @@ public:
                 l = mid+1;
             }
         }
-        return h;
+        return l;
     }
 };

@@ -4,7 +4,7 @@
 class Solution {
 public:
     int firstBadVersion(int n) {
-        int l = 0;
+        int l = 1;
         int h = n;
         
         while(l!=h){
@@ -16,6 +16,6 @@ public:
                 l = mid+1;
             }
         }
-        return l;
+        return h;
     }
 };

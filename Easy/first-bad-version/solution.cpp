@@ -4,11 +4,11 @@
 class Solution {
 public:
     int firstBadVersion(int n) {
-        int l = 1;
-        int h = n;
+        auto l = 1;
+        auto h = n;
         
         while(l<=h){
-            long long mid = (l+h)/2;
+            int mid = left + (right - left) / 2;
             if(isBadVersion(mid)){
                 h = mid-1;
             }

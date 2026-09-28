@@ -10,6 +10,7 @@ public:
                     o--;
                     c--;
                 }
+                o++;
             }
         }
         return o;

@@ -1,0 +1,48 @@
+# 441. Arranging Coins
+
+| | |
+|---|---|
+| **Difficulty** | Easy |
+| **Language** | `C++` |
+| **Tags** | `Math` · `Binary Search` |
+| **LeetCode** | [View Problem](https://leetcode.com/problems/arranging-coins/) |
+
+| Runtime | Memory |
+|---------|--------|
+| 0 ms | 7.7 MB |
+
+---
+
+## 📝 Problem Description
+
+You have `n` coins and you want to build a staircase with these coins. The staircase consists of `k` rows where the `ith` row has exactly `i` coins. The last row of the staircase **may be** incomplete.
+
+Given the integer `n`, return *the number of **complete rows** of the staircase you will build*.
+
+ 
+
+**Example 1:**
+
+```
+Input: n = 5
+Output: 2
+Explanation: Because the 3rd row is incomplete, we return 2.
+```
+
+**Example 2:**
+
+```
+Input: n = 8
+Output: 3
+Explanation: Because the 4th row is incomplete, we return 3.
+```
+
+ 
+
+**Constraints:**
+
+	- `1 <= n <= 231 - 1`
+
+---
+
+*Auto-synced by [LeetCode GitHub Sync](https://leetcode.com/problems/arranging-coins/)*

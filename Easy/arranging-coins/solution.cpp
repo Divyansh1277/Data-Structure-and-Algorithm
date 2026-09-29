@@ -5,7 +5,7 @@ public:
         int sum = 0;
         for(int i=1;i<=n;i++){
             sum = sum+i;
-            if(sum<n){
+            if(sum<=n){
                 count++;
             }
             else break;

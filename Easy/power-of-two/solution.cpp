@@ -1,7 +1,8 @@
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
-        if(2 & n) return false;
-        else true;
+        int a = 2 & n;
+        cout<<a;
+        return false;
     }
 };

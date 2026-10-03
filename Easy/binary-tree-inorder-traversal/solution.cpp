@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    void solve(vector<int>v,TreeNode* root){
+    void solve(vector<int>&v,TreeNode* root){
         if(root==nullptr) return;
         v.push_back(root->val);
         solve(root->left);

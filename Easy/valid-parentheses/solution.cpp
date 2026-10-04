@@ -1,14 +1,15 @@
 class Solution {
 public:
     bool isValid(string s) {
-        int count = 0;
-        for(int i=0;i<s.size()-1;i = i+2){
-            if(s[i]=='(' && s[i+1]==')') continue;
-            else if(s[i]=='[' && s[i+1]==']') continue;
-            else if(s[i]=='{' && s[i+1]=='}') continue;
-            else count++;
+        stack<char>st;
+        for(int i=0;i<s.size();i++){
+            if(s[i]=='(' || s[i]=='{' || s[i]=='[') st.push(s[i]);
+            else{
+                if(st.top()==s[i]) st.pop();
+                else break;
+            }
         }
-        if(count==0) return true;
+        if(st.isempty()) return true;
         else return false;
     }
 };

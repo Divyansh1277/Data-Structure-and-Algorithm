@@ -9,7 +9,7 @@ public:
                 else break;
             }
         }
-        if(st.isempty()) return true;
+        if(st.empty()) return true;
         else return false;
     }
 };

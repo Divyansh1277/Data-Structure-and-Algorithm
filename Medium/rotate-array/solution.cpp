@@ -7,8 +7,8 @@ public:
     }
     void rotate(vector<int>& nums, int k) {
         int size = nums.size();
-        doratate(0,size-k-1);
-        dorotate(size-k,size-1);
-        dorotate(0,size-1);
+        doratate(nums,0,size-k-1);
+        dorotate(nums,size-k,size-1);
+        dorotate(nums,0,size-1);
     }
 };

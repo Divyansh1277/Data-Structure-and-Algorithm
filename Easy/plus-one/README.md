@@ -3,13 +3,10 @@
 | | |
 |---|---|
 | **Difficulty** | Easy |
-| **Language** | `C++` |
+| **Language** | `Submit` |
 | **Tags** | `Array` · `Math` |
 | **LeetCode** | [View Problem](https://leetcode.com/problems/plus-one/) |
 
-| Runtime | Memory |
-|---------|--------|
-| 0 ms | 8.5 MB |
 
 ---
 

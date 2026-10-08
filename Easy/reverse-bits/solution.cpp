@@ -18,7 +18,12 @@ public:
             }
         }
         reverse(s.begin(),s.end());
-        cout<<s;
+        cout<<sum;
+        // int sum = 0;
+        // for(int i=s.size()-1;i>=0;i--){
+        //     sum = sum+pow(2,i)* (int(s[i]));
+        // }
+        // cout<<sum;
         return 0;
     }
 };

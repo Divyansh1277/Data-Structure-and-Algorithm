@@ -12,6 +12,11 @@ public:
                 n = n/2;
             }
         }
+        if(s.size()<32){
+            while(s.size()!=32){
+                s = s+"0";
+            }
+        }
         reverse(s.begin(),s.end());
         cout<<s;
         return 0;

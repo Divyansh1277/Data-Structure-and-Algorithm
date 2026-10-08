@@ -21,8 +21,8 @@ public:
         cout<<s;
         int sum = 0;
         for(int i=s.size()-1;i>=0;i--){
-            sum = sum+pow(2,i)* stoi(s[i]);
-        
+            sum = sum+pow(2,i)* (s[i]-'0');
+        }
         cout<<sum;
         return 0;
     }

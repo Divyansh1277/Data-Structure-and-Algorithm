@@ -17,13 +17,13 @@ public:
                 s = s+"0";
             }
         }
-        // reverse(s.begin(),s.end());
-        cout<<s;
+        reverse(s.begin(),s.end());
+        cout<<s<<endl;
         int sum = 0;
         for(int i=s.size()-1;i>=0;i--){
             sum = sum+pow(2,i)* (s[i]-'0');
         }
         cout<<sum;
-        return 0;
+        return sum;
     }
 };

@@ -11,7 +11,7 @@ public:
             }
             else s1 = s1+s[i];
         }
-        reverse(s1.begin(),s1.end());
+        // reverse(s1.begin(),s1.end());
         // for(int i = 0;i<size;i++){
         //     cout<<v[i]<<" ";
         // }

@@ -17,7 +17,8 @@ public:
         reverse(v.begin(),v.end());
         string s2 = "";
         for(int i=0;i<v.size();i++){
-            s2 = s2+v[i];
+            if(i==v.size()-1) s2 = s2+v[i];
+            s2 = s2+v[i]<<" ";
         }
         // for(int i = 0;i<size;i++){
         //     cout<<v[i]<<" ";

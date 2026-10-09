@@ -11,10 +11,14 @@ public:
             }
             else s1 = s1+s[i];
         }
-        // reverse(s1.begin(),s1.end());
+        reverse(v.begin(),v.end());
+        string s2 = "";
+        for(int i=0;i<v.size();i++){
+            s2 = s2+v[i]+" ";
+        }
         // for(int i = 0;i<size;i++){
         //     cout<<v[i]<<" ";
         // }
-        return s1;
+        return s2;
     }
 };

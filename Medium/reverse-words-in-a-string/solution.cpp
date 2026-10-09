@@ -1,23 +1,15 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        reverse(s.begin(),s.end());
-        int i = 0;
-        while(i!=s.size()){
-            int j = i;
-            while(s[j]!=' '){
-                j++;
-            }
-            int k = j;
-            j--;
-            while(i<j){
-                swap(s[i],s[j]);
-                i++;j--;
-            }
-            i = k;
+        vector<string> v;
+        int size = s.size();
+        for(int i = 0;i<size();i++){
+            string s1 = "";
+            if(s[i]==' ') v.push_back(s1);
         }
-        cout<<s;
+        for(int i = 0;i<size();i++){
+            cout<<v[i]<<" ";
+        }
         return s;
-
     }
 };

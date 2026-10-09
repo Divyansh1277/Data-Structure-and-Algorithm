@@ -20,9 +20,7 @@ public:
         for(int i=0;i<v.size();i++){
             if(i==v.size()-1 && v[v.size()-1]=="") continue;
             if(v[i]=="") continue;
-            
-            if(i==v.size()-1) s2 = s2+v[i];
-            else s2 = s2+v[i];
+            else s2 = s2+v[i]+" ";
         }
         
         return s2;

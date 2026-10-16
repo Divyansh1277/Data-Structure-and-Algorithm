@@ -6,7 +6,7 @@ public:
             int b = num;
             while(b>0){
                 b=b+num%10;
-                b = b/10;
+                num = num/10;
             }
             num = b;
         }

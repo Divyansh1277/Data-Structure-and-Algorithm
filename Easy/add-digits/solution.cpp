@@ -4,9 +4,9 @@ public:
         int a = 0;
         while(num>10){
             int b = num;
-            while(b>0){
+            while(b>10){
                 b=b+num%10;
-                num = num/10;
+                b = b/10;
             }
             num = b;
         }

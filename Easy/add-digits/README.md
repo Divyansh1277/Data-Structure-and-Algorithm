@@ -3,13 +3,10 @@
 | | |
 |---|---|
 | **Difficulty** | Easy |
-| **Language** | `C++` |
+| **Language** | `Submit` |
 | **Tags** | `Math` · `Simulation` · `Number Theory` |
 | **LeetCode** | [View Problem](https://leetcode.com/problems/add-digits/) |
 
-| Runtime | Memory |
-|---------|--------|
-| 0 ms | 7.8 MB |
 
 ---
 

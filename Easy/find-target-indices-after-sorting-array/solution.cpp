@@ -5,14 +5,19 @@ public:
         int count = 0;
         int occ = 0;
         while(i<=j){
+            if(i==j){
+                if(arr[i]==target){
+                    occ++;
+                    break;
+                }
+            }
             if(arr[i]<target){
                 count++;
             }
             if(arr[j]<target){
                 count++;
             }
-            cout<<arr[i];
-            cout<<arr[j];
+            
             if(arr[i]==target) occ++;
             if(arr[j]==target) occ++;
             i++;j--;

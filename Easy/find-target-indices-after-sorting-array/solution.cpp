@@ -17,8 +17,8 @@ public:
         }
         vector<int>v;
         for(int i=0;i<occ;i++){
-            v.push_back(count);
-            count++;
+            v.push_back(count++);
+            
         }
         return v;
     }

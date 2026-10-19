@@ -11,6 +11,8 @@ public:
             if(arr[j]<target){
                 count++;
             }
+            cout<<arr[i];
+            cout<<arr[j];
             if(arr[i]==target) occ++;
             if(arr[j]==target) occ++;
             i++;j--;

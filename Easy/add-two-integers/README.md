@@ -3,10 +3,13 @@
 | | |
 |---|---|
 | **Difficulty** | Easy |
-| **Language** | `Submit` |
+| **Language** | `C++` |
 | **Tags** | `Math` |
 | **LeetCode** | [View Problem](https://leetcode.com/problems/add-two-integers/) |
 
+| Runtime | Memory |
+|---------|--------|
+| 0 ms | 7.8 MB |
 
 ---
 

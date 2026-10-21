@@ -3,7 +3,7 @@ public:
     int findComplement(int num) {
         string s = "";
         while(num>0){
-            s = s+tostring(num%2);
+            s = s+to_string(num%2);
             num = num/2;
         }
         for(int i=0;i<s.size();i++){

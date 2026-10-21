@@ -18,6 +18,7 @@ public:
             if(s[i]=='0') continue;
             else{
                 sum = sum+pow(2,j++);
+                cout<<endl<<sum;
             }
         }
         return sum;

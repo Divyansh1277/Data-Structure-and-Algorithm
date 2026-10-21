@@ -6,6 +6,7 @@ public:
             s = s+to_string(num%2);
             num = num/2;
         }
+        cout<<s;
         for(int i=0;i<s.size();i++){
             if(s[i]=='0') s[i]=='1';
             else s[i]=='1';

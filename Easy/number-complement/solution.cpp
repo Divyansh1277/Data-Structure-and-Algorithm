@@ -7,6 +7,7 @@ public:
             num = num/2;
         }
         cout<<s;
+        reverse(s.begin(),s.end());
         for(int i=0;i<s.size();i++){
             if(s[i]=='1') s[i]='0';
             else s[i]='1';
@@ -15,10 +16,11 @@ public:
         int sum = 0;
         int j=0;
         for(int i=s.size()-1;i>0;i--){
-            if(s[i]=='0') continue;
+            if(s[i]=='0'){
+                j++;
+            }
             else{
                 sum = sum+pow(2,j++);
-                cout<<endl<<sum;
             }
         }
         return sum;

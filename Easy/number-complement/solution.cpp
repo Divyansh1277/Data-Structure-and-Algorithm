@@ -7,7 +7,10 @@ public:
             num = num/2;
         }
         cout<<s;
-        reverse(s.begin(),s.end());
+        int n = stoi(s);
+        int m = n^0;
+        cout<<m;
+        s = to_string(m);
         for(int i=0;i<s.size();i++){
             if(s[i]=='1') s[i]='0';
             else s[i]='1';

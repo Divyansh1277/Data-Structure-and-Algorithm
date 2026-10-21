@@ -8,7 +8,7 @@ public:
         }
         cout<<s;
         for(int i=0;i<s.size();i++){
-            if(s[i]=='1') s[i]=='0';
+            if(s[i]=='1') s[i]='0';
             else s[i]='1';
         }
         cout<<endl<<s;

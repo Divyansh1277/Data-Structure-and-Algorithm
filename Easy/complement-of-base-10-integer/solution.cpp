@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int bitwiseComplement(int n) {
+    int bitwiseComplement(int num) {
         string s = "";
         while(num>0){
             s = s+to_string(num%2);

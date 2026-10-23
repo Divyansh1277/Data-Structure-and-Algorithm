@@ -10,7 +10,7 @@ public:
                 reverse(s.begin()+i,s.begin()+i+k);
             }
             else{
-                reverse(s.begin()+i,s.begin()+i+(size));
+                reverse(s.begin()+i,s.end());
             }
             i = i+2*k;
         }

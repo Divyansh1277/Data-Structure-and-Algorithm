@@ -6,7 +6,7 @@ public:
             if(size>=(i+2*k)){
                 reverse(s.begin()+i,s.begin()+i+k);
             }
-            else if(k>=size-i && size-i<2*k){
+            else if(size-i>=k){
                 reverse(s.begin()+i,s.begin()+i+k);
             }
             else{

@@ -4,7 +4,21 @@ public:
         int pro = 1;
         sort(nums.begin(),nums.end());
         int size = nums.size();
-        pro = nums[size-1]*nums[size-2]*nums[size-3]
+        int i=0;
+        int j=0,k=size-1;
+        while(i<3){
+            if(nums[i]<0){
+                if(nums[j]*-1>nums[k]){
+                    pro = nums[j]*pro;
+                    j++;
+                }
+            }
+            else{
+                    pro = nums[k]*pro;
+                    k--;
+                }
+            i++;
+        }
         return pro;
     }
 };

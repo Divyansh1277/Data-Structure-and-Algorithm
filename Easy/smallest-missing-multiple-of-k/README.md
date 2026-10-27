@@ -3,10 +3,13 @@
 | | |
 |---|---|
 | **Difficulty** | Easy |
-| **Language** | `Submit` |
+| **Language** | `C++` |
 | **Tags** | `Array` · `Hash Table` |
 | **LeetCode** | [View Problem](https://leetcode.com/problems/smallest-missing-multiple-of-k/) |
 
+| Runtime | Memory |
+|---------|--------|
+| 0 ms | 24.1 MB |
 
 ---
 

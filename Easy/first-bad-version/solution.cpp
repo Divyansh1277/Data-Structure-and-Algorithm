@@ -8,7 +8,7 @@ public:
         auto h = n;
         
         while(l<=h){
-            int mid = left + (right - left) / 2;
+            int mid = l + (h - l) / 2;
             if(isBadVersion(mid)){
                 h = mid-1;
             }

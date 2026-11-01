@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool checkDivisibility(int n) {
+        if(n<10) return false;
         int a = n;
         int sum=0;
         while(a>0){
@@ -16,9 +17,11 @@ public:
         }
         cout<<endl<<sum1;
         sum = sum+sum1;
+
         if(sum%n==0){
             return true;
         }
+        if(n%sum==0) return true;
         else return false;
     }
 };

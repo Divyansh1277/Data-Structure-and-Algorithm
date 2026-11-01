@@ -9,7 +9,7 @@ public:
         }
         int b = n;
         int sum1 = 1;
-        while(a>0){
+        while(b>0){
             sum1 = sum1*b%10;
             b = b/10;
         }
